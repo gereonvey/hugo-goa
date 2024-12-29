@@ -2,6 +2,9 @@
   {{ with .Site.Params.social.twitter }}
   <a href="https://twitter.com/{{.}}" aria-label="Twitter" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
   {{ end }}
+  {{ with .Site.Params.social.bluesky }}
+  <a href="https://bsky.app/profile/{{.}}" aria-label="BlueSky" target="_blank"><i class="fab fa-bluesky" aria-hidden="true"></i></a>
+  {{ end }}
   {{ with .Site.Params.social.google }}
   <a href="https://plus.google.com/{{.}}/about" aria-label="Google Plus" target="_blank"><i class="fab fa-google-plus" aria-hidden="true"></i></a>
   {{ end }}
